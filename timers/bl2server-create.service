@@ -1,0 +1,12 @@
+[Unit]
+Description=Create a BL2 VPN And Mumble server instance on Vultr
+
+[Service]
+Type=simple
+User=z3r0
+WorkingDirectory=/home/z3r0/random/vultrexp
+ExecStart=/bin/bash /home/z3r0/random/vultrexp/create_server.sh
+
+[Install]
+WantedBy=multi-user.target
+

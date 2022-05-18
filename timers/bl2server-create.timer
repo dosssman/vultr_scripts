@@ -1,0 +1,11 @@
+[Unit]
+Description=Create a BL2 VPN And Mumble server instance on Vultr
+
+[Timer]
+OnCalendar=Sat *-*-* 04:00:00
+Persistent=False
+
+[Install]
+WantedBy=timers.target
+
+

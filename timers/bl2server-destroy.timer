@@ -1,0 +1,9 @@
+[Unit]
+Description=Destroys the lastly created  BL2 VPN And Mumble server instance on Vultr
+
+[Timer]
+OnCalendar=Sun *-*-* 14:00:00
+Persistent=False
+
+[Install]
+WantedBy=timers.target
